@@ -19,13 +19,13 @@ $(function(){
             $('.hover').css('opacity', '0');
         }
     );
-    
+
     $(window).mousemove(function(e){
        beforeMouseX = mouseX;
        beforeMouseY = mouseY;
        mouseX = e.pageX;
        mouseY = e.pageY;
-       
+
        console.log(mouseX, mouseY, beforeMouseX, beforeMouseY);
     });
 });
@@ -35,7 +35,7 @@ function check(element){
     var elementX = $(element).offset().top;
     var elementY = $(element).offset().left;
     var elementWidth = $(element).width();
-    
+
     if(beforeMouseY >= elementY) return 0;
     if(beforeMouseY >= elementX + 220) return 1;
     if(beforeMouseX <= elementX) return 2;
