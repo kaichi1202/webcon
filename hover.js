@@ -2,8 +2,14 @@ var mouseX;
 var mouseY;
 var beforeMouseX;
 var beforeMouseY;
+var elementWidth;
+var distancePlus;
+var distanceMinus;
+var distance2;
 
 $(function(){
+	set();
+
 	$('#box1').hover(function(){hover('#box1', '#hover1');}, function(){out('#box1', '#hover1');});
 	$('#box2').hover(function(){hover('#box2', '#hover2');}, function(){out('#box2', '#hover2');});
 	$('#box3').hover(function(){hover('#box3', '#hover3');}, function(){out('#box3', '#hover3');});
@@ -19,28 +25,33 @@ $(function(){
 		mouseX = e.pageX;
 		mouseY = e.pageY;
 	});
+
+	/* TODO: 処理を軽くする */
+	$(window).resize(function(){
+		set();
+	});
 });
 
 function hover(box, hover){
-	$(hover).css('top', '-220px');
+	$(hover).css('top', '-' + elementWidth + 'px');
 	$(hover).css('left', '0px');
 	switch (inCheck(box)){
 		case 0:
-			$(hover).animate({top: '+=220'}, 'fast');
+			$(hover).animate({top: distancePlus}, 'fast');
 			break;
 		case 1:
-			$(hover).css('top', '+=440');
-			$(hover).animate({top: '-=220'}, 'fast');
+			$(hover).css('top', distance2);
+			$(hover).animate({top: distanceMinus}, 'fast');
 			break;
 		case 2:
-			$(hover).css('top', '+=220');
-			$(hover).css('left', '-=220');
-			$(hover).animate({left: '+=220'}, 'fast');
+			$(hover).css('top', distancePlus);
+			$(hover).css('left', distanceMinus);
+			$(hover).animate({left: distancePlus}, 'fast');
 			break;
 		case 3:
-			$(hover).css('top', '+=220');
-			$(hover).css('left', '+=220');
-			$(hover).animate({left: '-=220'}, 'fast');
+			$(hover).css('top', distancePlus);
+			$(hover).css('left', distancePlus);
+			$(hover).animate({left: distanceMinus}, 'fast');
 			break;
 		default:
 			break;
@@ -50,16 +61,16 @@ function hover(box, hover){
 function out(box, hover){
 	switch (outCheck(box)){
 		case 0:
-			$(hover).stop(false, true).animate({top: '-=220'}, 'fast');
+			$(hover).stop(false, true).animate({top: distanceMinus}, 'fast');
 			break;
 		case 1:
-			$(hover).stop(false, true).animate({top: '+=220'}, 'fast');
+			$(hover).stop(false, true).animate({top: distancePlus}, 'fast');
 			break;
 		case 2:
-			$(hover).stop(false, true).animate({left: '-=220'}, 'fast');
+			$(hover).stop(false, true).animate({left: distanceMinus}, 'fast');
 			break;
 		case 3:
-			$(hover).stop(false, true).animate({left: '+=220'}, 'fast');
+			$(hover).stop(false, true).animate({left: distancePlus}, 'fast');
 			break;
 		default:
 			break;
@@ -71,28 +82,49 @@ function inCheck(element){
 	var elementY = $(element).offset().top;
 
 	if(beforeMouseY <= elementY) return 0;
-	if(beforeMouseY >= elementY + 220) return 1;
+	if(beforeMouseY >= elementY + elementWidth) return 1;
 	if(beforeMouseX <= elementX) return 2;
-	if(beforeMouseX >= elementX + 220) return 3;
-	
+	if(beforeMouseX >= elementX + elementWidth) return 3;
+
 	return 4;
 }
 
 function outCheck(element){
 	var elementX = $(element).offset().left;
 	var elementY = $(element).offset().top;
-	var centerX = elementX + 220 / 2;
-	var centerY = elementY + 220 / 2;
+	var centerX = elementX + elementWidth / 2;
+	var centerY = elementY + elementWidth / 2;
 	var defferenceX = mouseX - centerX;
 	var defferenceY = mouseY - centerY;
-	
+
 	var radian = Math.atan2(defferenceY, defferenceX);
 	var degree = radian * (180 / Math.PI);
-	
+
 	if(degree >= -135 && degree < -45) return 0;
 	if(degree >= 45 && degree < 135) return 1;
 	if(degree >= 135 && degree < 180 || degree >= -180 && degree <-135) return 2;
 	if(degree >= -45 && degree < 45) return 3;
-	
+
 	return 4;
+}
+
+function set(){
+	elementWidth = $('.box img').width();
+	$('.box').css('width', elementWidth);
+	$('.box').css('height', elementWidth);
+
+	$('#hover1, #hover2, #hover3, #hover4, #hover5, #hover6, #hover7, #hover8').css('width', elementWidth);
+	$('#hover1, #hover2, #hover3, #hover4, #hover5, #hover6, #hover7, #hover8').css('height', elementWidth);
+	$('#hover1, #hover2, #hover3, #hover4, #hover5, #hover6, #hover7, #hover8').css('top', '-' + elementWidth + 'px');
+	$('#hover1, #hover2, #hover3, #hover4, #hover5, #hover6, #hover7, #hover8').css('left', '0px');
+
+	$('.box img').css('width', elementWidth);
+	$('.box img').css('height', elementWidth)
+
+	$(hover).css('top', '-' + elementWidth + 'px');
+	$(hover).css('left', '0px');
+
+	distancePlus = '+=' + elementWidth;
+	distanceMinus = '-=' + elementWidth;
+	distance2 = '+=' + elementWidth * 2;
 }
