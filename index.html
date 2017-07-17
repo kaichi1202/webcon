@@ -1,97 +1,118 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>インターネットに潜む危険</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="jquery.js"></script>
-  </head>
+	<head>
+		<meta charset="UTF-8">
+		<title>インターネットに潜む危険</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="jquery.js"></script>
+		<script src="hover.js"></script>
+	</head>
 
-  <body>
-    <!--グローバルナビ-->
-    <div class="head">
-      <div class="topiconbox">
-        <div class="topicon">
-          <h1><a href="index.html"><img src="img/topicon.png" alt="Internet Security" width="240px" height="100px"></a></h1>
-        </div>
-      </div>
+	<body>
+		<!--グローバルナビ-->
+		<div class="head">
+			<div class="topiconbox">
+				<div class="topicon">
+					<h1><a href="index.html"><img src="img/topicon.png" alt="Internet Security" width="240px" height="100px"></a></h1>
+				</div>
+			</div>
 
-      <div class="topnavbox">
-        <nav class="topnav">
-          <ul>
-          <li class="topbutton"><a href="index.html">Internet Securityとは</a></li>
-          <li class="topbutton"><a href="index.html">サイトマップ</a></li>
-          <li class="topbutton"><a href="index.html">サイト情報</a></li>
-          </ul>
-        </nav>
-      </div>
+			<div class="topnavbox">
+				<nav class="topnav">
+					<ul>
+					<li class="topbutton"><a href="index.html"><span style="border-bottom: solid 3px #ffffff;">Internet Securityとは</span></a></li>
+					<li class="topbutton"><a href="index.html"><span style="border-bottom: solid 3px #ffffff;">サイトマップ</span></a></li>
+					<li class="topbutton"><a href="info.html"><span style="border-bottom: solid 3px #ffffff;">サイト情報</span></a></li>
+					</ul>
+				</nav>
+			</div>
 
-      <div class="topengbox">
-        <a href="eng.html" class="topeng">English</a>
-      </div>
-    </div>
+			<div class="topengbox">
+				<a href="eng.html" class="topeng">English</a>
+			</div>
+		</div>
 
-    <!--スライド-->
+		<!--スライド(仮)-->
+		<img src="img/slide1.png" class="slide">
 
-    <!--トピック-->
-    <div class="topicbox">
-      <div class="topic">
-        <center>
-        <span style="border-bottom: solid 1px #5E5E5E;"> ー Topic ー </span>
-        </center>
-      </div>
-    </div>
+		<!--トピック-->
+		<div class="topicbox">
+			<div class="topic">
+				<center>
+				<span style="border-bottom: solid 1px #5E5E5E;"> ー Topic ー </span>
+				</center>
+			</div>
+		</div>
 
-    <center>
-    <div class="boxA">
-      <div class="box1">
-        <div class="hover">
-        </div>
-      </div>
-      <div class="box2">
+		<center>
+			<div class="boxA">
+				<div class="box" id="box1">
+					<img class="boximg" src="img/pc.png" width="100%"></img>
+					<div id="hover1">
+					</div>
+				</div>
+				<div class="box" id="box2">
+					<img class="boximg" src="img/folder.png" width="100%"></img>
+					<div id="hover2">
+					</div>
+				</div>
+				<div class="box" id="box3">
+					<img class="boximg" src="img/web.png" width="100%"></img>
+					<div id="hover3">
+					</div>
+				</div>
+				<div class="box" id="box4">
+					<img class="boximg" src="img/sns.png" width="100%"></img>
+					<div id="hover4">
+					</div>
+				</div>
+			</div>
+		</center>
 
-      </div>
-      <div class="box3">
+		<center>
+			<div class="boxB">
+				<div class="box" id="box5">
+					<img class="boximg" src="img/office.png" width="100%"></img>
+					<div id="hover5">
+					</div>
+				</div>
+				<div class="box" id="box6">
+					<img class="boximg" src="img/iot.png" width="100%"></img>
+					<div id="hover6">
+					</div>
+				</div>
+				<div class="box" id="box7">
+					<img class="boximg" src="img/camera.png" width="100%"></img>
+					<div id="hover7">
+					</div>
+				</div>
+				<div class="box" id="box8">
+					<img class="boximg" src="img/quiz.png" width="100%"></img>
+					<div id="hover8">
+					</div>
+				</div>
+			</div>
+		</center>
 
-      </div>
-      <div class="box4">
+		<br>
 
-      </div>
-    </div>
-    </center>
+		<center>
+			<div class="morebox">
+				<a href="more" class="more">MORE</a>
+			</div>
+		</center>
 
-    <center>
-    <div class="boxB">
-      <div class="box5">
+		<br><br><br><br>
 
-      </div>
-      <div class="box6">
+		<!--サイト構成-->
+		<div class="sitekousei">
+		</div>
 
-      </div>
-      <div class="box7">
-
-      </div>
-      <div class="box8">
-
-      </div>
-    </div>
-    </center>
-      <a href="more"class="more">MORE</a>
-    <center>
-
-
-<br><br><br><br>
-
-
-    <!--サイト構成-->
-    <div class="sitekousei">
-    </div>
-
-    <!--フッター-->
-      <footer class="footer">
-        <p class="cr">Copyright 2017 Internet Security </p>
-      </footer>
-  </body>
+		<!--フッター-->
+			<footer class="footer">
+				<p class="cr">Copyright 2017 Internet Security </p>
+			</footer>
+	</body>
 
 </html>
