@@ -30,7 +30,13 @@ body{
 	padding-left : 70%;
 }
 
+.totop{
+
+}
+
 /* index */
+
+
 
 .topiconbox{
 	float: left;
@@ -109,7 +115,7 @@ body{
 }
 
 .topicbox{
-	padding-top: 8px;
+	padding-top: 2px;
 }
 
 .topic{
@@ -156,8 +162,10 @@ body{
 	overflow: hidden;
 }
 
-#hover1, #hover2, #hover3, #hover4, #hover5, #hover6, #hover7, #hover8{
-	background-color: blue;
+
+
+#hover1{
+	background-color: #FF644E;
 	position: absolute;
 	height: 220px;
 	width: 220px;
@@ -167,22 +175,128 @@ body{
 	left: 0px;
 }
 
-.morebox{
+#hover2{
+	background-color: #16E7CF;
+	position: absolute;
+	height: 220px;
+	width: 220px;
+	z-index: 1;
+	opacity: 0.8;
+	top: -220px;
+	left: 0px;
+}
+
+#hover3{
+	background-color: #61D836;
+	position: absolute;
+	height: 220px;
+	width: 220px;
+	z-index: 1;
+	opacity: 0.8;
+	top: -220px;
+	left: 0px;
+}
+
+#hover4{
+	background-color: #00A2FF;
+	position: absolute;
+	height: 220px;
+	width: 220px;
+	z-index: 1;
+	opacity: 0.8;
+	top: -220px;
+	left: 0px;
+}
+
+#hover5{
+	background-color: #EF5FA7;
+	position: absolute;
+	height: 220px;
+	width: 220px;
+	z-index: 1;
+	opacity: 0.8;
+	top: -220px;
+	left: 0px;
+}
+
+#hover6{
+	background-color: #FAE232;
+	position: absolute;
+	height: 220px;
+	width: 220px;
+	z-index: 1;
+	opacity: 0.8;
+	top: -220px;
+	left: 0px;
+}
+
+#hover7{
+	background-color: #FF9300;
+	position: absolute;
+	height: 220px;
+	width: 220px;
+	z-index: 1;
+	opacity: 0.8;
+	top: -220px;
+	left: 0px;
+}
+
+#hover8{
+	background-color: #FF644E;
+	position: absolute;
+	height: 220px;
+	width: 220px;
+	z-index: 1;
+	opacity: 0.8;
+	top: -220px;
+	left: 0px;
+}
+
+
+#hover1 p,#hover2 p,#hover3 p,#hover4 p,#hover5 p,#hover6 p,#hover7 p,#hover8 p{
+	color: #ffffff;
+	font-size: 45px
+}
+
+
+
+#hover1 p1,#hover2 p1,#hover4 p1,#hover5 p1,#hover6 p1,#hover7 p1,#hover8 p1{
+	color: #ffffff;
+	font-size: 20px
+}
+
+#hover3 p1{
+	color: #ffffff;
+	font-size: 19px
+
+}
+
+.more{
 	width: 120px;
 	border: 1px solid #929292;
 	background: transparent;
-}
-
-.morebox:hover{
-	opacity: 0.8;
-}
-
-.morebox a{
 	color: #929292;
 	text-align: center;
 	text-decoration: none;
 	font-size:28px;
 }
+
+.more:hover{
+	opacity: 0.8;
+}
+
+
+.letsgo{
+	width:100%;
+	border: 15px solid #00A2FF;
+	color: #929292;
+	text-align: center;
+	text-decoration: none;
+	font-size:100px;
+}
+
+
+
 
 .sitekousei{
 	width: 100%;
