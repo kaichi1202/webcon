@@ -32,12 +32,20 @@ body{
 }
 
 .totop{
+	display: block;
+	width: 100px;
+	left: 50%;
+	bottom: 0;
+	position: fixed;
+	z-index: 1;
+	margin-left: -50px;
+}
 
+.totop img{
+	width: 100px;
 }
 
 /* index */
-
-
 
 .topiconbox{
 	float: left;
@@ -163,8 +171,6 @@ body{
 	overflow: hidden;
 }
 
-
-
 #hover1{
 	background-color: #FF644E;
 	position: absolute;
@@ -282,7 +288,7 @@ body{
 	color: #929292;
 	text-align: center;
 	text-decoration: none;
-	font-size:28px;
+	font-size: 28px;
 }
 
 .more:hover{
@@ -301,8 +307,14 @@ body{
 	text-decoration: none;
 	font-size: 7vw;
 	display: block;
+	transition: 0.3s;
 }
 
+.letsgo:hover{
+	background-color: #00A2FF;
+	color: white;
+	transition: 0.3s;
+}
 
 .sitekousei{
 	width: 100%;
@@ -314,7 +326,7 @@ body{
 
 .systems{
 	position: relative;
-	padding-top: 0px;
+	padding-top: 0;
 }
 
 .ie, .me, .sa, .gc {
