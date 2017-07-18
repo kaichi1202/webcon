@@ -168,108 +168,111 @@ body{
 #hover1{
 	background-color: #FF644E;
 	position: absolute;
-	height: 220px;
-	width: 220px;
 	z-index: 1;
 	opacity: 0.8;
-	top: -220px;
-	left: 0px;
+	overflow: hidden;
 }
 
 #hover2{
 	background-color: #16E7CF;
 	position: absolute;
-	height: 220px;
-	width: 220px;
 	z-index: 1;
 	opacity: 0.8;
-	top: -220px;
-	left: 0px;
+	overflow: hidden;
 }
 
 #hover3{
 	background-color: #61D836;
 	position: absolute;
-	height: 220px;
-	width: 220px;
 	z-index: 1;
 	opacity: 0.8;
-	top: -220px;
-	left: 0px;
+	overflow: hidden;
 }
 
 #hover4{
 	background-color: #00A2FF;
 	position: absolute;
-	height: 220px;
-	width: 220px;
 	z-index: 1;
 	opacity: 0.8;
-	top: -220px;
-	left: 0px;
+	overflow: hidden;
 }
 
 #hover5{
 	background-color: #EF5FA7;
 	position: absolute;
-	height: 220px;
-	width: 220px;
 	z-index: 1;
 	opacity: 0.8;
-	top: -220px;
-	left: 0px;
+	overflow: hidden;
 }
 
 #hover6{
 	background-color: #FAE232;
 	position: absolute;
-	height: 220px;
-	width: 220px;
 	z-index: 1;
 	opacity: 0.8;
-	top: -220px;
-	left: 0px;
+	overflow: hidden;
 }
 
 #hover7{
 	background-color: #FF9300;
 	position: absolute;
-	height: 220px;
-	width: 220px;
 	z-index: 1;
 	opacity: 0.8;
-	top: -220px;
-	left: 0px;
+	overflow: hidden;
 }
 
 #hover8{
 	background-color: #FF644E;
 	position: absolute;
-	height: 220px;
-	width: 220px;
 	z-index: 1;
 	opacity: 0.8;
-	top: -220px;
-	left: 0px;
+	overflow: hidden;
 }
 
 
 #hover1 p,#hover2 p,#hover3 p,#hover4 p,#hover5 p,#hover6 p,#hover7 p,#hover8 p{
 	color: #ffffff;
-	font-size: 45px
+	font-size: 3vw;
 }
 
-
-
-#hover1 p1,#hover2 p1,#hover4 p1,#hover5 p1,#hover6 p1,#hover7 p1,#hover8 p1{
+#hover1 p1{
 	color: #ffffff;
-	font-size: 20px
+	font-size: 1.4vw;
+}
+
+#hover2 p1{
+	color: #ffffff;
+	font-size: 1.7vw;
 }
 
 #hover3 p1{
 	color: #ffffff;
-	font-size: 19px
+	font-size: 1.3vw;
+}
 
+#hover4 p1{
+	color: #ffffff;
+	font-size: 1.7vw;
+}
+
+#hover5 p1{
+	color: #ffffff;
+	font-size: 1.7vw;
+}
+
+#hover6 p1{
+	color: #ffffff;
+	font-size: 1.5vw;
+}
+
+#hover7 p1{
+	color: #ffffff;
+	font-size: 1.7vw;
+}
+
+#hover8 p1{
+	color: #ffffff;
+	font-size: 1.7vw;
 }
 
 .more{
