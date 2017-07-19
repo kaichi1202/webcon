@@ -110,19 +110,12 @@ function outCheck(element){
 
 function set(){
 	elementWidth = $('.box img').width();
-	$('.box').css('width', elementWidth);
 	$('.box').css('height', elementWidth);
 
 	$('#hover1, #hover2, #hover3, #hover4, #hover5, #hover6, #hover7, #hover8').css('width', elementWidth);
 	$('#hover1, #hover2, #hover3, #hover4, #hover5, #hover6, #hover7, #hover8').css('height', elementWidth);
 	$('#hover1, #hover2, #hover3, #hover4, #hover5, #hover6, #hover7, #hover8').css('top', '-' + elementWidth + 'px');
 	$('#hover1, #hover2, #hover3, #hover4, #hover5, #hover6, #hover7, #hover8').css('left', '0px');
-
-	$('.box img').css('width', elementWidth);
-	$('.box img').css('height', elementWidth)
-
-	$(hover).css('top', '-' + elementWidth + 'px');
-	$(hover).css('left', '0px');
 
 	distancePlus = '+=' + elementWidth;
 	distanceMinus = '-=' + elementWidth;

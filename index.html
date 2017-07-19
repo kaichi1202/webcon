@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="jquery.js"></script>
 		<script src="hover.js"></script>
-		<script src="slide.js"></script>
+		<script src="scroll.js"></script>
 	</head>
 
 	<body>
@@ -22,9 +22,9 @@
 			<div class="topnavbox">
 				<nav class="topnav">
 					<ul>
-					<li class="topbutton"><a href="index.html"><span style="border-bottom: solid 3px #ffffff;">Internet Securityとは</span></a></li>
+					<li class="topbutton"><a href="pages/whatis.html"><span style="border-bottom: solid 3px #ffffff;">Internet Securityとは</span></a></li>
 					<li class="topbutton"><a href="index.html"><span style="border-bottom: solid 3px #ffffff;">サイトマップ</span></a></li>
-					<li class="topbutton"><a href="info.html"><span style="border-bottom: solid 3px #ffffff;">サイト情報</span></a></li>
+					<li class="topbutton"><a href="pages/info.html"><span style="border-bottom: solid 3px #ffffff;">サイト情報</span></a></li>
 					</ul>
 				</nav>
 			</div>
@@ -111,14 +111,12 @@
 				</div>
 			</div>
 		</center>
-
 		<br>
-
 		<center>
 			<a href="index.html" class="more">MORE</a>
 		</center>
-
 		<br>
+		<hr width="90%" noshade >
 
 		<!--tour-->
 		<div class="topicbox">
@@ -128,16 +126,18 @@
 				</center>
 			</div>
 		</div>
-		<div class="foryou">
-			<p>全てを学びたいなら！<p>
-		</div>
 		<center>
-			<a href="tour/index.html" class="letsgo">
-				ツアーに出発！
-			</a>
+			<div class="foryou">
+				全てを学びたいなら！
+			</div>
 		</center>
-
-
+		<center>
+			<div class="letsgobox">
+				<a href="tour/index.html" class="letsgo">
+					ツアーに出発！
+				</a>
+			</div>
+		</center>
 
 		<br><br><br>
 
@@ -145,9 +145,9 @@
 		<div class="sitekousei">
 		</div>
 
-		<!--topボタン-->
+		<!-- topボタン -->
 		<center>
-			<a href="#wrap" class="totop"><img src="img/totop.png" width="8%"></a>
+			<a class="totop"><img src="img/totop.png" onClick="$('body, html').animate({scrollTop: 0}, 400, 'swing');"></a>
 		</center>
 
 		<!-- フッター -->
