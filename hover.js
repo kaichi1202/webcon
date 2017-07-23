@@ -26,7 +26,6 @@ $(function(){
 		mouseY = e.pageY;
 	});
 
-	/* TODO: 処理を軽くする */
 	$(window).resize(function(){
 		set();
 	});
