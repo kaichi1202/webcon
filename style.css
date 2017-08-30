@@ -4,6 +4,7 @@ body{
 	margin: 0;
 	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
 	width: 100%;
+	line-height: 1.75;
 }
 
 /* common */
@@ -58,7 +59,32 @@ body{
 
 .pagearticlebox{
 	width:80%;
-	font-size:22.5px;
+	font-size:22px;
+	color: #5E5E5E;
+	text-align: left;
+}
+
+.pagearticlebox2{
+	width: 90%;
+	font-size:22px;
+	color: #5E5E5E;
+	text-align: left;
+}
+
+.pagetop2{
+	font-size: 38px;
+	color: #5E5E5E;
+	text-align: left;
+	border-bottom: solid 1px black;
+}
+.pro{
+	font-size: 30px;
+	color: #5E5E5E;
+	text-align: left;
+}
+
+.pro2{
+	font-size: 25px;
 	color: #5E5E5E;
 	text-align: left;
 }
@@ -378,3 +404,9 @@ body{
 	width: 30%;
 	padding-bottom: 0;
 }
+
+
+
+
+
+
