@@ -174,9 +174,17 @@ body{
 
 .topic{
 	background-color: #EBEBEB;
-	font-size: 35px;
 	width: 100%;
 	padding-top: 10px;
+}
+
+.topiceng{
+	font-size: 35px;
+	color: #5E5E5E;
+}
+
+.topicjpn{
+	font-size: 15px;
 	color: #5E5E5E;
 }
 
