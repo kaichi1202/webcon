@@ -334,24 +334,6 @@ body{
 	font-size: 1.7vw;
 }
 
-.more{
-	width: 120px;
-	border: 1px solid #929292;
-	background: transparent;
-	color: #929292;
-	text-align: center;
-	text-decoration: none;
-	font-size: 28px;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-
-.more:hover{
-	opacity: 0.8;
-}
-
 .foryou{
 	font-size: 30px;
 	color: #5E5E5E;
@@ -413,9 +395,3 @@ body{
 	width: 30%;
 	padding-bottom: 0;
 }
-
-
-
-
-
-
