@@ -418,3 +418,33 @@ body {
 	height: 1.5px;
 	border: 1px solid black;
 }*/
+
+/*cyosakuken*/
+.ankebox {
+	border: 4px solid #FF5050;
+	overflow: hidden;
+	width: 90%;
+	margin: 0 auto;
+}
+.anke1box {
+	float: left;
+	width: 50%;
+	padding-top: 15px
+}
+.anke2box {
+	float: right;
+	width: 50%;
+	padding-top: 15px
+}
+.ankemoji1 {
+	font-size: 15px;
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.ankejissi {
+	font-size: 20px;
+	color: white;
+	background-color: #FF5050;
+	float: left;
+}
