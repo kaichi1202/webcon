@@ -1,170 +1,231 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-	<head>
-		<meta charset="UTF-8">
-		<title>インターネットに潜む危険</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<script src="jquery.js"></script>
-		<script src="hover.js"></script>
-		<script src="scroll.js"></script>
-	</head>
-
-	<body>
-		<!-- グローバルナビ -->
-		<div class="head">
-			<div class="topiconbox">
-				<div class="topicon">
-					<h1><a href="index.html"><img src="img/topicon.png" alt="Internet Security" width="240px" height="100px"></a></h1>
-				</div>
-			</div>
-
-			<div class="topnavbox">
-				<nav class="topnav">
-					<ul>
-					<li class="topbutton"><a href="pages/whatis.html"><span style="border-bottom: solid 3px #ffffff;">Internet Securityとは</span></a></li>
-					<li class="topbutton"><a href="index.html"><span style="border-bottom: solid 3px #ffffff;">サイトマップ</span></a></li>
-					<li class="topbutton"><a href="pages/info.html"><span style="border-bottom: solid 3px #ffffff;">サイト情報</span></a></li>
-					</ul>
-				</nav>
-			</div>
-
-			<div class="topengbox">
-				<a href="eng.html" class="topeng">English</a>
-			</div>
-		</div>
-
-		<!-- スライド(仮) -->
-		<img src="img/slide1.png" class="slide">
-
-		<!-- トピック -->
-		<div class="topicbox">
-			<div class="topic">
-				<center>
-				<span style="border-bottom: solid 1px #5E5E5E;"> ー Topic ー </span>
-				</center>
-			</div>
-		</div>
-
-		<center>
-			<div class="boxA">
-				<a href="pages/pc.html">
-					<div class="box" id="box1">
-						<img class="boximg" src="img/pc.png" width="100%"></img>
-						<div id="hover1">
-							<p>パソコン</p>
-							<p1>自分のパソコンを守ろう！</p1>
-						</div>
-					</div>
-				</a>
-				<a href="pages/priv.html">
-					<div class="box" id="box2">
-						<img class="boximg" src="img/folder.png" width="100%"></img>
-						<div id="hover2">
-							<p>個人情報</p>
-							<p1>個人情報を守ろう！</p1>
-						</div>
-					</div>
-				</a>
-				<a href="pages/badsite.html">
-					<div class="box" id="box3">
-						<img class="boximg" src="img/web.png" width="100%"></img>
-						<div id="hover3">
-							<p>悪質サイト</p>
-							<p1>悪質サイトに気をつけよう！</p1>
-						</div>
-					</div>
-				</a>
-				<a href="pages/sns.html">
-					<div class="box" id="box4">
-						<img class="boximg" src="img/sns.png" width="100%"></img>
-						<div id="hover4">
-							<p>SNS</p>
-							<p1>SNSを正しく使おう！</p1>
-						</div>
-					</div>
-				</a>
-			</div>
-		</center>
-
-		<center>
-			<div class="boxB">
-				<a href="pages/com.html">
-					<div class="box" id="box5">
-						<img class="boximg" src="img/office.png" width="100%"></img>
-						<div id="hover5">
-							<p>会社の情報</p>
-							<p1>会社の情報を守ろう！</p1>
-						</div>
-					</div>
-				</a>
-				<a href="pages/iot.html">
-					<div class="box" id="box6">
-						<img class="boximg" src="img/iot.png" width="100%"></img>
-						<div id="hover6">
-							<p>IoT</p>
-							<p1>IoTにもセキュリティ？</p1>
-						</div>
-					</div>
-				</a>
-				<a href="pages/pc.html">
-					<div class="box" id="box7">
-						<img class="boximg" src="img/camera.png" width="100%"></img>
-						<div id="hover7">
-							<p>監視</p>
-							<p1>監視のセキュリティ！</p1>
-						</div>
-					</div>
-				</a>
-				<a href="pages/quiz.html">
-					<div class="box" id="box8">
-						<img class="boximg" src="img/quiz.png" width="100%"></img>
-						<div id="hover8">
-							<p>クイズ！</p>
-							<p1>知識を確かめよう！</p1>
-						</div>
-					</div>
-				</a>
-			</div>
-		</center>
-		<br>
-
-		<!--tour-->
-		<div class="topicbox">
-			<div class="topic">
-				<center>
-					<span style="border-bottom: solid 1px #5E5E5E;"> ー WebSite Tour ー </span>
-				</center>
-			</div>
-		</div>
-		<center>
-			<div class="foryou">
-				全てを学びたいなら！
-			</div>
-		</center>
-		<center>
-			<div class="letsgobox">
-				<a href="tour/index.html" class="letsgo">
-					ツアーに出発！
-				</a>
-			</div>
-		</center>
-
-		<br><br><br>
-
-		<!-- サイト構成 -->
-		<div class="sitekousei">
-		</div>
-
-		<!-- topボタン -->
-		<center>
-			<a class="totop"><img src="img/totop.png" onClick="$('body, html').animate({scrollTop: 0}, 400, 'swing');"></a>
-		</center>
-
-		<!-- フッター -->
-			<footer class="footer">
-				<p class="cr">Copyright 2017 Internet Security </p>
-			</footer>
-	</body>
-
+  <head>
+    <meta charset="UTF-8">
+    <title>インターネットに潜む危険</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery.js"></script>
+    <script src="hover.js"></script>
+    <script src="scroll.js"></script>
+  </head>
+  <body>
+    <!-- グローバルナビ -->
+    <div class="head">
+      <div class="topiconbox">
+        <div class="topicon">
+          <h1>
+            <a href="index.html">
+              <img src="img/topicon.png" alt="Internet Security" width="240px" height="100px">
+            </a>
+          </h1>
+        </div>
+      </div>
+      <div class="topnavbox">
+        <nav class="topnav">
+          <ul>
+            <li class="topbutton">
+              <a href="pages/whatis.html">
+                <span style="border-bottom: solid 3px #ffffff;">Internet Securityとは</span>
+              </a>
+            </li>
+            <li class="topbutton">
+              <a href="pages/sitemap.html">
+                <span style="border-bottom: solid 3px #ffffff;">サイトマップ</span>
+              </a>
+            </li>
+            <li class="topbutton">
+              <a href="pages/info.html">
+                <span style="border-bottom: solid 3px #ffffff;">サイト情報</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="topengbox">
+        <a href="eng.html" class="topeng">English</a>
+      </div>
+    </div>
+    <!-- スライド(仮) -->
+    <img src="img/slide1.png" class="slide">
+    <!-- トピック -->
+    <div class="topicbox" style="padding-bottom:5px;">
+      <div class="topic">
+        <center>
+          <span style="border-bottom: solid 1px #5E5E5E;" class="topiceng">ー Topic ー </span>
+        </center>
+      </div>
+    </div>
+    <center>
+      <div class="boxA">
+        <a href="pages/pc.html">
+          <div class="box" id="box1">
+            <img class="boximg" src="img/pc.png" width="100%">
+            </img>
+            <div id="hover1">
+              <p>パソコン</p>
+              <p1>自分のパソコンを守ろう！</p1>
+            </div>
+          </div>
+        </a>
+        <a href="pages/priv.html">
+          <div class="box" id="box2">
+            <img class="boximg" src="img/folder.png" width="100%">
+            </img>
+            <div id="hover2">
+              <p>個人情報</p>
+              <p1>個人情報を守ろう！</p1>
+            </div>
+          </div>
+        </a>
+        <a href="pages/badsite.html">
+          <div class="box" id="box3">
+            <img class="boximg" src="img/web.png" width="100%">
+            </img>
+            <div id="hover3">
+              <p>悪質サイト</p>
+              <p1>悪質サイトに気をつけよう！</p1>
+            </div>
+          </div>
+        </a>
+        <a href="pages/sns.html">
+          <div class="box" id="box4">
+            <img class="boximg" src="img/sns.png" width="100%">
+            </img>
+            <div id="hover4">
+              <p>SNS</p>
+              <p1>SNSを正しく使おう！</p1>
+            </div>
+          </div>
+        </a>
+      </div>
+    </center>
+    <center>
+      <div class="boxB">
+        <a href="pages/com.html">
+          <div class="box" id="box5">
+            <img class="boximg" src="img/office.png" width="100%">
+            </img>
+            <div id="hover5">
+              <p>会社の情報</p>
+              <p1>会社の情報を守ろう！</p1>
+            </div>
+          </div>
+        </a>
+        <a href="pages/iot.html">
+          <div class="box" id="box6">
+            <img class="boximg" src="img/iot.png" width="100%">
+            </img>
+            <div id="hover6">
+              <p>IoT</p>
+              <p1>IoTにもセキュリティ？</p1>
+            </div>
+          </div>
+        </a>
+        <a href="pages/cyo.html">
+          <div class="box" id="box7">
+            <img class="boximg" src="img/camera.png" width="100%">
+            </img>
+            <div id="hover7">
+              <p>著作権</p>
+              <p1>著作権を学ぼう！</p1>
+            </div>
+          </div>
+        </a>
+        <a href="pages/quiz.html">
+          <div class="box" id="box8">
+            <img class="boximg" src="img/quiz.png" width="100%">
+            </img>
+            <div id="hover8">
+              <p>クイズ！</p>
+              <p1>知識を確かめよう！</p1>
+            </div>
+          </div>
+        </a>
+      </div>
+    </center>
+    <br>
+    <!--
+    <center>
+      <a href="index.html" class="more">MORE</a>
+    </center>
+    -->
+    <br>
+    <!--hr width="90%" noshade-->
+    <!--tour-->
+    <div class="topicbox" style="padding-bottom:5px;">
+      <div class="topic">
+        <center>
+          <span style="border-bottom: solid 1px #5E5E5E;" class="topiceng">ー SiteTour ー </span>
+        </center>
+      </div>
+    </div>
+    <center>
+      <div class="foryou">全てを学びたいなら！ </div>
+    </center>
+    <center>
+      <div class="letsgobox">
+        <a href="tour/index.html" class="letsgo">ツアーに出発！ </a>
+      </div>
+    </center>
+    <br>
+    <br>
+    <br>
+    <!-- サイト構成 -->
+    <div class="sitekousei"><br>
+      <div class="siteboxall">
+      <div class="sitebox1">
+        ■TOP<br>
+        &nbsp;□パソコンのセキュリティ<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ばばば<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ばばば<br>
+        &nbsp;□個人情報のセキュリティ<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ばばば<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ばばば<br>
+        &nbsp;□個人情報のセキュリティ<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ばばば<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ばばば
+      </div>
+      <div class="sitebox2"><br>
+        &nbsp;□パソコンのセキュリティ<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ばばば<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ばばば<br>
+        &nbsp;□個人情報のセキュリティ<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ばばば<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ばばば<br>
+        &nbsp;□個人情報のセキュリティ<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ばばば<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ばばば
+      </div>
+      <div class="sitebox3"><br>
+        &nbsp;□パソコンのセキュリティ<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ばばば<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ばばば<br>
+        &nbsp;□個人情報のセキュリティ<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ばばば<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ばばば
+      </div>
+      <div class="sitebox4"><br>
+        &nbsp;■InternetSecurityとは<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;InternetSecurityとは<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;サイト紹介<br>
+        &nbsp;■サイト情報<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;推奨環境<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;参考文献<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;素材利用<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;お問い合わせ<br>
+        &nbsp;■English
+      </div>
+      </div>
+    </div>
+    <!-- topボタン -->
+    <center>
+      <a class="totop">
+        <img src="img/totop.png" onClick="$('body, html').animate({scrollTop: 0}, 400, 'swing');">
+      </a>
+    </center>
+    <!-- フッター -->
+    <footer class="footer">
+      <p class="cr">Copyright 2017 Internet Security </p>
+    </footer>
+  </body>
 </html>

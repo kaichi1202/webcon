@@ -1,90 +1,186 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="UTF-8">
-		<title>サイト情報</title>
-		<link rel="stylesheet" type="text/css" href="../style.css">
-		<script src="../jquery.js"></script>
-		<script src="../info.js"></script>
-		<script src="../scroll.js"></script>
-	</head>
-
-	<body>
-
-		<!-- グローバルナビ -->
-		<div class="head">
-			<div class="topiconbox">
-				<div class="topicon">
-					<h1><a href="../index.html"><img src="../img/topicon.png" alt="Internet Security" width="240px" height="100px"></a></h1>
-				</div>
-			</div>
-			<div class="topnavbox">
-				<nav class="topnav">
-					<ul>
-						<li class="topbutton"><a href="whatis.html"><span style="border-bottom: solid 3px #ffffff;">Internet Securityとは</span></a></li>
-						<li class="topbutton"><a href="../index.html"><span style="border-bottom: solid 3px #ffffff;">サイトマップ</span></a></li>
-						<li class="topbutton"><a href="info.html"><span style="border-bottom: solid 3px #ffffff;">サイト情報</span></a></li>
-					</ul>
-				</nav>
-			</div>
-			<div class="topengbox">
-				<a href="eng.html" class="topeng">English</a>
-			</div>
-		</div>
-		<br>
-
-		<!-- 対応OS -->
-		<div class="topicbox" style="padding-bottom:5px;">
-			<div class="topic">
-				<center>
-					<span style="border-bottom: solid 1px #5E5E5E;" class="topiceng"> ー System ー </span>
-				</center>
-				<center>
-					<span class="topicjpn">推奨環境</span>
-				</center>
-			</div>
-		</div>
-		<center>
-			<div class="buttonsy">
-				<img class="ieb" onclick="ieClick();" src="../img/ie-top.png"><img class="meb" onclick="meClick();" src="../img/me-top.png"><img class="sab" onclick="saClick();" src="../img/sa-top.png"><img class="gcb" onclick="gcClick();" src="../img/gc-top.png">
-			</div>
-		</center>
-		<div class="systems">
-			<center><img class="ie active" src="../img/ie.png" width="90%" height="90%"></center>
-			<center><img class="me" src="../img/me.png" width="90%" height="90%"></center>
-			<center><img class="sa" src="../img/sa.png" width="90%" height="90%"></center>
-			<center><img class="gc" src="../img/gc.png" width="90%" height="90%"></center>
-		</div>
-		<br>
-		<center><img src="../img/sp.png" width="90%" height="90%"></center>
-		<br>
-	
-		<!--参考資料 -->
-		<div class="topicbox" style="padding-bottom:5px;">
-			<div class="topic">
-				<center>
-					<span style="border-bottom: solid 1px #5E5E5E;" class="topiceng"> ー Bibliography ー </span>
-				</center>
-				<center>
-					<span class="topicjpn">参考文献</span>
-				</center>
-			</div>
-		</div>
-
-		<!-- サイト構成 -->
-		<div class="sitekousei">
-
-		</div>
-
-		<!-- topボタン -->
-		<center>
-			<a class="totop"><img src="../img/totop.png" onClick="$('body, html').animate({scrollTop: 0}, 400, 'swing');"></a>
-		</center>
-
-		<!-- フッター -->
-		<footer class="footer">
-			<p class="cr">Copyright 2017 Internet Security </p>
-		</footer>
-	</body>
-
+  <head>
+    <meta charset="UTF-8">
+    <title>サイト情報</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <script src="../jquery.js"></script>
+    <script src="../info.js"></script>
+    <script src="../scroll.js"></script>
+  </head>
+  <body>
+    <!-- グローバルナビ -->
+    <div class="head">
+      <div class="topiconbox">
+        <div class="topicon">
+          <h1>
+            <a href="../index.html">
+              <img src="../img/topicon.png" alt="Internet Security" width="240px" height="100px">
+            </a>
+          </h1>
+        </div>
+      </div>
+      <div class="topnavbox">
+        <nav class="topnav">
+          <ul>
+            <li class="topbutton">
+              <a href="whatis.html">
+                <span style="border-bottom: solid 3px #ffffff;">Internet Securityとは</span>
+              </a>
+            </li>
+            <li class="topbutton">
+              <a href="../index.html">
+                <span style="border-bottom: solid 3px #ffffff;">サイトマップ</span>
+              </a>
+            </li>
+            <li class="topbutton">
+              <a href="info.html">
+                <span style="border-bottom: solid 3px #ffffff;">サイト情報</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="topengbox">
+        <a href="eng.html" class="topeng">English</a>
+      </div>
+    </div>
+    <br>
+    <!-- 対応OS -->
+    <div class="topicbox" style="padding-bottom:5px;">
+      <div class="topic">
+        <center>
+          <span style="border-bottom: solid 1px #5E5E5E;" class="topiceng">ー System ー </span>
+        </center>
+        <center>
+          <span class="topicjpn">推奨環境</span>
+        </center>
+      </div>
+    </div>
+    <center>
+      <div class="buttonsy">
+        <img class="ieb" onclick="ieClick();" src="../img/ie-top.png">
+        <img class="meb" onclick="meClick();" src="../img/me-top.png">
+        <img class="sab" onclick="saClick();" src="../img/sa-top.png">
+        <img class="gcb" onclick="gcClick();" src="../img/gc-top.png">
+      </div>
+    </center>
+    <div class="systems">
+      <center>
+        <img class="ie active" src="../img/ie.png" width="90%" height="90%">
+      </center>
+      <center>
+        <img class="me" src="../img/me.png" width="90%" height="90%">
+      </center>
+      <center>
+        <img class="sa" src="../img/sa.png" width="90%" height="90%">
+      </center>
+      <center>
+        <img class="gc" src="../img/gc.png" width="90%" height="90%">
+      </center>
+    </div>
+    <br>
+    <center>
+      <img src="../img/sp.png" width="90%" height="90%">
+    </center>
+    <br>
+    <!--参考資料 -->
+    <div class="topicbox" style="padding-bottom:5px;">
+      <div class="topic">
+        <center>
+          <span style="border-bottom: solid 1px #5E5E5E;" class="topiceng">ー Bibliography ー </span>
+        </center>
+        <center>
+          <span class="topicjpn">参考文献</span>
+        </center>
+      </div>
+    </div>
+    <center>
+      <table border="0" style="border-collapse: collapse; width:75%;" bordercolor="gray">
+        <thead>
+          <tr bgcolor="#00a2ff">
+            <th style="text-align:left;color:white;padding-top:10px;padding-bottom:10px;">
+              <center>サイト名</center>
+            </th>
+            <th style="text-align:left;color:white;padding-top:10px;padding-bottom:10px;">
+              <center>利用先</center>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align:left">フィッシング詐欺サイト</td>
+            <td style="text-align:left">銀行のサイト等になりすまし、個人情報を盗み出す</td>
+          </tr>
+          <tr bgcolor="#d3ebff">
+            <td style="text-align:left">ワンクリック詐欺サイト</td>
+            <td style="text-align:left">本来払わなくて良い高額な料金を請求してくる</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">偽のアンチウイルスソフトサイト</td>
+            <td style="text-align:left">まるでコンピューターウイルスに感染しているかのような表示を出す</td>
+          </tr>
+          <tr bgcolor="#d3ebff">
+            <td style="text-align:left">偽のサイトや改ざんされたサイト</td>
+            <td style="text-align:left">正規のサービスを受けられず、ウイルスに感染することもある</td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+    <!-- 素材利用 -->
+    <div class="topicbox" style="padding-bottom:5px;">
+      <div class="topic">
+        <center>
+          <span style="border-bottom: solid 1px #5E5E5E;" class="topiceng">ー Materials ー </span>
+        </center>
+        <center>
+          <span class="topicjpn">素材利用</span>
+        </center>
+      </div>
+    </div>
+    <center>
+      <table border="0" style="border-collapse: collapse; width:75%;" bordercolor="gray">
+        <thead>
+          <tr bgcolor="#61D836">
+            <th style="text-align:left;color:white;padding-top:10px;padding-bottom:10px;">
+              <center>サイト名</center>
+            </th>
+            <th style="text-align:left;color:white;padding-top:10px;padding-bottom:10px;">
+              <center>利用先</center>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align:left">フィッシング詐欺サイト</td>
+            <td style="text-align:left">銀行のサイト等になりすまし、個人情報を盗み出す</td>
+          </tr>
+          <tr bgcolor="#D7F6CE">
+            <td style="text-align:left">ワンクリック詐欺サイト</td>
+            <td style="text-align:left">本来払わなくて良い高額な料金を請求してくる</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">偽のアンチウイルスソフトサイト</td>
+            <td style="text-align:left">まるでコンピューターウイルスに感染しているかのような表示を出す</td>
+          </tr>
+          <tr bgcolor="#D7F6CE">
+            <td style="text-align:left">偽のサイトや改ざんされたサイト</td>
+            <td style="text-align:left">正規のサービスを受けられず、ウイルスに感染することもある</td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+    <!-- サイト構成 -->
+    <div class="sitekousei"></div>
+    <!-- topボタン -->
+    <center>
+      <a class="totop">
+        <img src="../img/totop.png" onClick="$('body, html').animate({scrollTop: 0}, 400, 'swing');">
+      </a>
+    </center>
+    <!-- フッター -->
+    <footer class="footer">
+      <p class="cr">Copyright 2017 Internet Security </p>
+    </footer>
+  </body>
 </html>
