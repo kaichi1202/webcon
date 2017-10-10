@@ -314,7 +314,7 @@ body {
 .sitebox1 {
 	width: 25%;
 	float: left;
-	
+
 }
 .sitebox2 {
 	width: 25%;
@@ -409,6 +409,16 @@ body {
 .sitemappagebox {
 	margin: 0 auto;
 	width: 55%
+}
+#one::after {
+	position: relative;
+	content: "";
+	background-color: #5E5E5E;
+	width: 1px;
+	height: 588px;
+	top: -2px;
+	left: 50%;
+	display: inline-block;
 }
 /*.more:after {
 	position: relative;
