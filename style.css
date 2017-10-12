@@ -40,6 +40,9 @@ body {
 .totop img {
 	width: 100px;
 }
+.totop:hover {
+	opacity: 0.5;
+}
 .pagebox {
 	width: 80%;
 }
