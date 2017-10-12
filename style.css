@@ -380,6 +380,7 @@ body {
 	padding-right: auto;
 	padding-top: 13px;
 	padding-bottom: 13px;
+	display: inline-block; 
 }
 .more:hover {
 	background-color: rgba(255,80,80,0.75);
