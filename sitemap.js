@@ -21,7 +21,6 @@ function set() {
 	$("#three").css("top", $("#priv").offset().top + $("#priv").height() / 2 + 10);
 	$("#three").css("left", $("#articles").offset().left + $("#articles").width() + 5 + $("#one").width());
 
-<<<<<<< HEAD
 	$("#four").css("top", $("#badsite").offset().top + $("#badsite").height() / 2 + 10);
 	$("#four").css("left", $("#articles").offset().left + $("#articles").width() + 5 + $("#one").width());
 
@@ -47,9 +46,3 @@ function set() {
 	$("#eight").css("top", $("#cyo").offset().top + $("#cyo").height() / 2 + 10);
 	$("#eight").css("left", $("#articles").offset().left + $("#articles").width() + 5 + $("#one").width());
 }
-=======
-	$("#five").css("top", $("#pc").offset().top + $("#pc").height() + 31);
-	$("#five").css("left", $("#pc").offset().left + ($("#twobox").offset().left - $("#pc").offset().left) / 2);
-	$("#five").css("height", $("#twobox").offset().top - ($("#pc").offset().top + $("#pc").height()));
-}
->>>>>>> master
