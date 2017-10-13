@@ -493,7 +493,7 @@ body {
 }
 
 .nextpage {
-	width: 20%;
+	width: 16%;
 	border: 2px solid #FF5050;
 	background: transparent;
 	color: #5E5E5E;
@@ -511,4 +511,9 @@ body {
 	background-color: rgba(255,80,80,0.75);
 	color: white;
 	transition: 0.2s;
+}
+
+.welcome {
+	font-size: 25px;
+	color: #5E5E5E;
 }
