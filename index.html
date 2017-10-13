@@ -1,235 +1,199 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <title>インターネットに潜む危険</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="jquery.js"></script>
-    <script src="hover.js"></script>
-    <script src="scroll.js"></script>
-  </head>
-  <body>
-    <!-- グローバルナビ -->
-    <div class="head">
-      <div class="topiconbox">
-        <div class="topicon">
-          <h1>
-            <a href="index.html">
-              <img src="img/topicon.png" alt="Internet Security" width="240px" height="100px">
-            </a>
-          </h1>
-        </div>
-      </div>
-      <div class="topnavbox">
-        <nav class="topnav">
-          <ul>
-            <li class="topbutton">
-              <a href="pages/whatis.html">
-                <span style="border-bottom: solid 3px #ffffff;">Internet Securityとは</span>
-              </a>
-            </li>
-            <li class="topbutton">
-              <a href="pages/sitemap.html">
-                <span style="border-bottom: solid 3px #ffffff;">サイトマップ</span>
-              </a>
-            </li>
-            <li class="topbutton">
-              <a href="pages/info.html">
-                <span style="border-bottom: solid 3px #ffffff;">サイト情報</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="topengbox">
-        <a href="eng.html" class="topeng">English</a>
-      </div>
-    </div>
-    <!-- スライド(仮) -->
-    <img src="img/slide1.png" class="slide">
-    <!-- トピック -->
-    <div class="topicbox" style="padding-bottom:5px;">
-      <div class="topic">
-        <center>
-          <span style="border-bottom: solid 1px #5E5E5E;" class="topiceng"><a name="1">ー Topic ー</a></span>
-        </center>
-      </div>
-    </div>
-    <center>
-      <div class="boxA">
-        <a href="pages/pc.html">
-          <div class="box" id="box1">
-            <img class="boximg" src="img/pc.png" width="100%">
-            </img>
-            <div id="hover1">
-              <p>パソコン</p>
-              <p1>自分のパソコンを守ろう！</p1>
-            </div>
-          </div>
-        </a>
-        <a href="pages/priv.html">
-          <div class="box" id="box2">
-            <img class="boximg" src="img/folder.png" width="100%">
-            </img>
-            <div id="hover2">
-              <p>個人情報</p>
-              <p1>個人情報を守ろう！</p1>
-            </div>
-          </div>
-        </a>
-        <a href="pages/badsite.html">
-          <div class="box" id="box3">
-            <img class="boximg" src="img/web.png" width="100%">
-            </img>
-            <div id="hover3">
-              <p>悪質サイト</p>
-              <p1>悪質サイトに気をつけよう！</p1>
-            </div>
-          </div>
-        </a>
-        <a href="pages/sns.html">
-          <div class="box" id="box4">
-            <img class="boximg" src="img/sns.png" width="100%">
-            </img>
-            <div id="hover4">
-              <p>SNS</p>
-              <p1>SNSを正しく使おう！</p1>
-            </div>
-          </div>
-        </a>
-      </div>
-    </center>
-    <center>
-      <div class="boxB">
-        <a href="pages/com.html">
-          <div class="box" id="box5">
-            <img class="boximg" src="img/office.png" width="100%">
-            </img>
-            <div id="hover5">
-              <p>会社の情報</p>
-              <p1>会社の情報を守ろう！</p1>
-            </div>
-          </div>
-        </a>
-        <a href="pages/iot.html">
-          <div class="box" id="box6">
-            <img class="boximg" src="img/iot.png" width="100%">
-            </img>
-            <div id="hover6">
-              <p>IoT</p>
-              <p1>IoTにもセキュリティ？</p1>
-            </div>
-          </div>
-        </a>
-        <a href="pages/cyo.html">
-          <div class="box" id="box7">
-            <img class="boximg" src="img/camera.png" width="100%">
-            </img>
-            <div id="hover7">
-              <p>著作権</p>
-              <p1>著作権を学ぼう！</p1>
-            </div>
-          </div>
-        </a>
-        <a href="pages/quiz.html">
-          <div class="box" id="box8">
-            <img class="boximg" src="img/quiz.png" width="100%">
-            </img>
-            <div id="hover8">
-              <p>クイズ！</p>
-              <p1>知識を確かめよう！</p1>
-            </div>
-          </div>
-        </a>
-      </div>
-    </center>
-    <br>
-    <!--
+<head>
+	<meta charset="UTF-8">
+	<title>インターネットに潜む危険</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script src="jquery.js">
+	</script>
+	<script src="hover.js">
+	</script>
+	<script src="scroll.js">
+	</script>
+</head>
+<body>
+	<!-- グローバルナビ -->
+	<div class="head">
+		<div class="topiconbox">
+			<div class="topicon">
+				<h1><a href="index.html"><img alt="Internet Security" height="100px" src="img/topicon.png" width="240px"></a></h1>
+			</div>
+		</div>
+		<div class="topnavbox">
+			<nav class="topnav">
+				<ul>
+					<li class="topbutton">
+						<a href="pages/whatis.html"><span style="border-bottom: solid 3px #ffffff;">Internet Securityとは</span></a>
+					</li>
+					<li class="topbutton">
+						<a href="pages/sitemap.html"><span style="border-bottom: solid 3px #ffffff;">サイトマップ</span></a>
+					</li>
+					<li class="topbutton">
+						<a href="pages/info.html"><span style="border-bottom: solid 3px #ffffff;">サイト情報</span></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="topengbox">
+			<a class="topeng" href="eng.html">English</a>
+		</div>
+	</div><!-- スライド(仮) -->
+	<img class="slide" src="img/slide1.png"> <!-- トピック -->
+	<div class="topicbox" style="padding-bottom:5px;">
+		<div class="topic">
+			<center>
+				<span class="topiceng" style="border-bottom: solid 1px #5E5E5E;"><a id="1" name="1">ー Topic ー</a></span>
+			</center>
+		</div>
+	</div>
+	<center>
+		<div class="boxA">
+			<a href="pages/pc.html">
+			<div class="box" id="box1">
+				<img class="boximg" src="img/pc.png" width="100%">
+				<div id="hover1">
+					<p>パソコン</p>自分のパソコンを守ろう！
+				</div>
+			</div></a> <a href="pages/priv.html">
+			<div class="box" id="box2">
+				<img class="boximg" src="img/folder.png" width="100%">
+				<div id="hover2">
+					<p>個人情報</p>個人情報を守ろう！
+				</div>
+			</div></a> <a href="pages/badsite.html">
+			<div class="box" id="box3">
+				<img class="boximg" src="img/web.png" width="100%">
+				<div id="hover3">
+					<p>悪質サイト</p>悪質サイトに気をつけよう！
+				</div>
+			</div></a> <a href="pages/sns.html">
+			<div class="box" id="box4">
+				<img class="boximg" src="img/sns.png" width="100%">
+				<div id="hover4">
+					<p>SNS</p>SNSを正しく使おう！
+				</div>
+			</div></a>
+		</div>
+	</center>
+	<center>
+		<div class="boxB">
+			<a href="pages/com.html">
+			<div class="box" id="box5">
+				<img class="boximg" src="img/office.png" width="100%">
+				<div id="hover5">
+					<p>会社の情報</p>会社の情報を守ろう！
+				</div>
+			</div></a> <a href="pages/iot.html">
+			<div class="box" id="box6">
+				<img class="boximg" src="img/iot.png" width="100%">
+				<div id="hover6">
+					<p>IoT</p>IoTにもセキュリティ？
+				</div>
+			</div></a> <a href="pages/cyo.html">
+			<div class="box" id="box7">
+				<img class="boximg" src="img/camera.png" width="100%">
+				<div id="hover7">
+					<p>著作権</p>著作権を学ぼう！
+				</div>
+			</div></a> <a href="pages/quiz.html">
+			<div class="box" id="box8">
+				<img class="boximg" src="img/quiz.png" width="100%">
+				<div id="hover8">
+					<p>クイズ！</p>知識を確かめよう！
+				</div>
+			</div></a>
+		</div>
+	</center><br>
+	<!--
     <center>
       <a href="index.html" class="more">MORE</a>
     </center>
     -->
-    <br>
-    <!--hr width="90%" noshade-->
-    <!--tour-->
-    <div class="topicbox" style="padding-bottom:5px;">
-      <div class="topic">
-        <center>
-          <span style="border-bottom: solid 1px #5E5E5E;" class="topiceng"><a name="2">ー SiteTour ー</a></span>
-        </center>
-      </div>
-    </div>
-    <center>
-      <div class="foryou">全てを学びたいなら！ </div>
-    </center>
-    <center>
-      <div class="letsgobox">
-        <a href="tour/index.html" class="letsgo">ツアーに出発！ </a>
-      </div>
-    </center>
-    <br>
-    <br>
-    <br>
-    <!-- サイト構成 -->
-    <div class="sitekousei"><br>
-      <div class="siteboxall">
-      <div class="sitebox1">
-        <a href="#" style="color: white;font-weight: bold;">■TOP</a><br>
-        &nbsp;<a href="pages/pc.html" style="color: white;font-weight: bold;">□自分のパソコンを守ろう！</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ばばば<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ばばば<br>
-        &nbsp;<a href="pages/priv.html" style="color: white;font-weight: bold;">□個人情報を守ろう！</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/priv.html#1" style="color: white;">SNSでの個人情報</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/priv.html#2" style="color: white;">その他の個人情報</a><br>
-        &nbsp;<a href="pages/badsite.html" style="color: white;font-weight: bold;">□悪質サイトに気をつけよう！</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/badsite.html#1" style="color: white;">フィッシング詐欺サイト</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/badsite.html#2" style="color: white;">ワンクリック詐欺サイト</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/badsite.html#3" style="color: white;">偽のウイルス対策サイト</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/badsite.html#4" style="color: white;">偽物のサイト</a>
-      </div>
-      <div class="sitebox2"><br>
-        &nbsp;<a href="pages/sns.html" style="color: white;font-weight: bold;">□SNSを正しく使おう！</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/sns.html#1" style="color: white;">位置情報問題</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/sns.html#2" style="color: white;">詐欺問題</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/sns.html#3" style="color: white;">偽情報・誤報問題</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/sns.html#4" style="color: white;">中傷問題</a><br>
-        &nbsp;<a href="pages/com.html" style="color: white;font-weight: bold;">□会社の情報を守ろう！</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ばばば<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ばばば<br>
-        &nbsp;<a href="pages/iot.html" style="color: white;font-weight: bold;">□IoTにもセキュリティ？</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/iot.html#1" style="color: white;">IoTの問題</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/iot.html#2" style="color: white;">最近のセキュリティ研究</a>
-      </div>
-      <div class="sitebox3"><br>
-        &nbsp;<a href="pages/cyo.html" style="color: white;font-weight: bold;">□著作権を学ぼう！</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/cyo.html#1" style="color: white;">著作物の利用</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/cyo.html#2" style="color: white;">違法ダウンロード</a><br><br>
-        &nbsp;<a href="pages/quiz.html" style="color: white;font-weight: bold;">■クイズ！</a><br><br>
-        &nbsp;<a href="pages/tour.html" style="color: white;font-weight: bold;">■サイトツアー</a><br>
-      </div>
-      <div class="sitebox4"><br>
-        &nbsp;<a href="pages/whatis.html" style="color: white;font-weight: bold;">■InternetSecurityとは</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/whatis.html#1" style="color: white;">InternetSecurityとは</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/whatis.html#2" style="color: white;">サイト紹介</a><br>
-        &nbsp;<a href="pages/info.html" style="color: white;font-weight: bold;">■サイト情報</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/info.html#1" style="color: white;">推奨環境</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/info.html#2" style="color: white;">参考文献</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/info.html#3" style="color: white;">素材利用</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;お問い合わせ<br>
-        &nbsp;<a href="pages/sitemap.html" style="color: white;font-weight: bold;">■サイトマップ</a><br><br>
-        &nbsp;<a href="eng.html" style="color: white;font-weight: bold;">■English</a>
-      </div>
-      </div>
-    </div>
-    <!-- topボタン -->
-    <center>
-      <a class="totop">
-        <img src="img/totop.png" onClick="$('body, html').animate({scrollTop: 0}, 400, 'swing');">
-      </a>
-    </center>
-    <!-- フッター -->
-    <footer class="footer">
-      <p class="cr">Copyright 2017 Internet Security </p>
-    </footer>
-  </body>
+	<br>
+	<!--hr width="90%" noshade-->
+	 <!--tour-->
+	<div class="topicbox" style="padding-bottom:5px;">
+		<div class="topic">
+			<center>
+				<span class="topiceng" style="border-bottom: solid 1px #5E5E5E;"><a id="2" name="2">ー SiteTour ー</a></span>
+			</center>
+		</div>
+	</div>
+	<center>
+		<div class="foryou">
+			全てを学びたいなら！
+		</div>
+	</center>
+	<center>
+		<div class="letsgobox">
+			<a class="letsgo" href="pages/tour.html">ツアーに出発！</a>
+		</div>
+	</center><br>
+	<br>
+	<br>
+	<!-- サイト構成 -->
+	<div class="sitekousei">
+		<br>
+		<div class="siteboxall">
+			<div class="sitebox1">
+				<a href="#" style="color: white;font-weight: bold;">■TOP</a><br>
+				&nbsp;<a href="pages/pc.html" style="color: white;font-weight: bold;">□自分のパソコンを守ろう！</a><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ばばば<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ばばば<br>
+				&nbsp;<a href="pages/priv.html" style="color: white;font-weight: bold;">□個人情報を守ろう！</a><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/priv.html#1" style="color: white;">SNSでの個人情報</a><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/priv.html#2" style="color: white;">その他の個人情報</a><br>
+				&nbsp;<a href="pages/badsite.html" style="color: white;font-weight: bold;">□悪質サイトに気をつけよう！</a><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/badsite.html#1" style="color: white;">フィッシング詐欺サイト</a><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/badsite.html#2" style="color: white;">ワンクリック詐欺サイト</a><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/badsite.html#3" style="color: white;">偽のウイルス対策サイト</a><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/badsite.html#4" style="color: white;">偽物のサイト</a>
+			</div>
+			<div class="sitebox2">
+				<br>
+				&nbsp;<a href="pages/sns.html" style="color: white;font-weight: bold;">□SNSを正しく使おう！</a><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/sns.html#1" style="color: white;">位置情報問題</a><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/sns.html#2" style="color: white;">詐欺問題</a><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/sns.html#3" style="color: white;">偽情報・誤報問題</a><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/sns.html#4" style="color: white;">中傷問題</a><br>
+				&nbsp;<a href="pages/com.html" style="color: white;font-weight: bold;">□会社の情報を守ろう！</a><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ばばば<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ばばば<br>
+				&nbsp;<a href="pages/iot.html" style="color: white;font-weight: bold;">□IoTにもセキュリティ？</a><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/iot.html#1" style="color: white;">IoTの問題</a><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/iot.html#2" style="color: white;">最近のセキュリティ研究</a>
+			</div>
+			<div class="sitebox3">
+				<br>
+				&nbsp;<a href="pages/cyo.html" style="color: white;font-weight: bold;">□著作権を学ぼう！</a><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/cyo.html#1" style="color: white;">著作物の利用</a><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/cyo.html#2" style="color: white;">違法ダウンロード</a><br>
+				<br>
+				&nbsp;<a href="pages/quiz.html" style="color: white;font-weight: bold;">■クイズ！</a><br>
+				<br>
+				&nbsp;<a href="pages/tour.html" style="color: white;font-weight: bold;">■サイトツアー</a><br>
+			</div>
+			<div class="sitebox4">
+				<br>
+				&nbsp;<a href="pages/whatis.html" style="color: white;font-weight: bold;">■InternetSecurityとは</a><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/whatis.html#1" style="color: white;">InternetSecurityとは</a><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/whatis.html#2" style="color: white;">サイト紹介</a><br>
+				&nbsp;<a href="pages/info.html" style="color: white;font-weight: bold;">■サイト情報</a><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/info.html#1" style="color: white;">推奨環境</a><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/info.html#2" style="color: white;">参考文献</a><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/info.html#3" style="color: white;">素材利用</a><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;お問い合わせ<br>
+				&nbsp;<a href="pages/sitemap.html" style="color: white;font-weight: bold;">■サイトマップ</a><br>
+				<br>
+				&nbsp;<a href="eng.html" style="color: white;font-weight: bold;">■English</a>
+			</div>
+		</div>
+	</div><!-- topボタン -->
+	<center>
+		<a class="totop"><img onclick="$('body, html').animate({scrollTop: 0}, 400, 'swing');" src="img/totop.png"></a>
+	</center><!-- フッター -->
+	<footer class="footer">
+		<p class="cr">Copyright 2017 Internet Security</p>
+	</footer>
+</body>
 </html>
