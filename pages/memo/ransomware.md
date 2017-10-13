@@ -8,5 +8,6 @@
 2.Petyaとその亜種
 
 ## WannaCry
+世界的に
 
 ## Petya
